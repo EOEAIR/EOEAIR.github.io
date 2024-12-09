@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>PVE+RANCHER：一种低成本的云集群方案 | Ben0i0d&#39;s Site</title>
+  <title>PVE+RANCHER：一种低成本的云集群方案 | EOELAB AI Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="本文主要介绍我实验室当前使用的云服务集群，当前架构版号V24.1.28_1,以下架构均已通过生产环境验证并稳定运行至少6个月。 我们希望集群能够承担以下负载能力:  数据可靠，具有去单点故障能力、热备能力 弹性化扩缩容 完成包括GPU调度等问题  架构介绍以下我按照IAAS，PAAS，SAAS层次介绍 IAAS层次虚拟化方案：proxmox ve（KVM）我们建议对于刚上手虚拟化的人，选择成熟可靠">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PVE+RANCHER：一种低成本的云集群方案">
-<meta property="og:url" content="https://ben0i0d.github.io/2024/12/08/PVE+RANCHER%EF%BC%9A%E4%B8%80%E7%A7%8D%E4%BD%8E%E6%88%90%E6%9C%AC%E7%9A%84%E4%BA%91%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88/index.html">
-<meta property="og:site_name" content="Ben0i0d&#39;s Site">
+<meta property="og:url" content="https://eoeair.github.io/2024/12/08/PVE+RANCHER%EF%BC%9A%E4%B8%80%E7%A7%8D%E4%BD%8E%E6%88%90%E6%9C%AC%E7%9A%84%E4%BA%91%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:site_name" content="EOELAB AI Research">
 <meta property="og:description" content="本文主要介绍我实验室当前使用的云服务集群，当前架构版号V24.1.28_1,以下架构均已通过生产环境验证并稳定运行至少6个月。 我们希望集群能够承担以下负载能力:  数据可靠，具有去单点故障能力、热备能力 弹性化扩缩容 完成包括GPU调度等问题  架构介绍以下我按照IAAS，PAAS，SAAS层次介绍 IAAS层次虚拟化方案：proxmox ve（KVM）我们建议对于刚上手虚拟化的人，选择成熟可靠">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-12-08T13:57:00.000Z">
 <meta property="article:modified_time" content="2024-12-08T14:16:08.512Z">
-<meta property="article:author" content="ben0i0d">
+<meta property="article:author" content="eoelab">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Ben0i0d's Site" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="EOELAB AI Research" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -43,7 +43,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Ben0i0d&#39;s Site</a>
+        <a href="/" id="logo">EOELAB AI Research</a>
       </h1>
       
     </div>
@@ -64,7 +64,7 @@
         <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ben0i0d.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://eoeair.github.io"></form>
       </div>
     </div>
   </div>
@@ -157,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ben0i0d.github.io/2024/12/08/PVE+RANCHER%EF%BC%9A%E4%B8%80%E7%A7%8D%E4%BD%8E%E6%88%90%E6%9C%AC%E7%9A%84%E4%BA%91%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88/" data-id="cm4fq014t00013gquemky519g" data-title="PVE+RANCHER：一种低成本的云集群方案" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://eoeair.github.io/2024/12/08/PVE+RANCHER%EF%BC%9A%E4%B8%80%E7%A7%8D%E4%BD%8E%E6%88%90%E6%9C%AC%E7%9A%84%E4%BA%91%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88/" data-id="cm4fq014t00013gquemky519g" data-title="PVE+RANCHER：一种低成本的云集群方案" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -241,7 +241,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2024 ben0i0d<br>
+      &copy; 2024 eoelab<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
